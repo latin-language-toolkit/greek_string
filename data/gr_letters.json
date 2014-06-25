@@ -1,0 +1,757 @@
+{
+  "alpha" : {
+    "letters" : ["Ἇ","ἃ","Ἃ","ἅ","Ἅ","ἁ","Ἁ","α","Α"],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Α",
+      "lower" : "α"
+    },
+    "phoneme" : "a",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ἁ",
+        "lower" : "ἁ"
+      },
+      "acute_asper" : {
+        "upper" : "Ἅ",
+        "lower" : "ἅ"
+      },
+      "asper_grave" : {
+        "upper" : "Ἃ",
+        "lower" : "ἃ"
+      },
+      "asper_circumflex" : {
+        "upper" : "Ἇ",
+        "lower" : "ἇ"
+      },
+      "lenis" : {
+        "upper" : "Ἀ",
+        "lower" : "ἀ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ἄ",
+        "lower" : "ἄ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ἂ",
+        "lower" : "ἂ"
+      },
+      "circumflex_lenis" : {
+        "upper" : "Ἆ",
+        "lower" : "ἆ"
+      },
+      "acute" : {
+        "upper" : "Ά",
+        "lower" : "ά"
+      },
+      "grave" : {
+        "upper" : "Ὰ",
+        "lower" : "ὰ"
+      },
+      "circumflex" : {
+        "lower" : "ᾶ"
+      },
+      "asper_iota" : {
+        "upper" : "Ἁι",
+        "lower" : "ᾁ"
+      },
+      "acute_asper_iota" : {
+        "upper" : "Ἅι",
+        "lower" : "ᾅ"
+      },
+      "asper_grave_iota" : {
+        "upper" : "Ἃι",
+        "lower" : "ᾃ"
+      },
+      "asper_circumflex_iota" : {
+        "upper" : "Ἇι",
+        "lower" : "ᾇ"
+      },
+      "iota_lenis" : {
+        "upper" : "Ἀι",
+        "lower" : "ᾀ"
+      },
+      "acute_iota_lenis" : {
+        "upper" : "Ἄι",
+        "lower" : "ᾄ"
+      },
+      "grave_iota_lenis" : {
+        "upper" : "Ἂι",
+        "lower" : "ᾂ"
+      },
+      "circumflex_iota_lenis" : {
+        "upper" : "Ἆι",
+        "lower" : "ᾆ"
+      },
+      "acute_iota" : {
+        "upper" : "Άι",
+        "lower" : "ᾴ"
+      },
+      "grave_iota" : {
+        "upper" : "Ὰι",
+        "lower" : "ᾲ"
+      },
+      "circumflex_iota" : {
+        "lower" : "ᾷ"
+      },
+      "iota" : {
+        "upper" : "Αι",
+        "lower" : "ᾳ"
+      }
+    },
+    "quantity" : {
+      "long" : true,
+      "short" : true
+    }
+  },
+  "beta" : {
+    "letters" : ["β", "Β"],
+    "type" : "consonant",
+    "articulation" : {
+      "media" : true,
+      "labial" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Β",
+      "lower" : "β"
+    },
+    "phoneme" : "b"
+  },
+  "gamma" : {
+    "letters" : ["γ", "Γ"],
+    "type" : "consonant",
+    "articulation" : {
+      "media" : true,
+      "guttural" : true,
+      "nasal" : true,
+      "sonans" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Γ",
+      "lower" : "γ"
+    },
+    "phoneme" : "g"
+  },
+  "delta" : {
+    "letters" : ["δ", "Δ"],
+    "type" : "consonant",
+    "articulation" : {
+      "media" : true,
+      "dental" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Δ",
+      "lower" : "δ"
+    },
+    "phoneme" : "d"
+  },
+  "epsilon" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Ε",
+      "lower" : "ε"
+    },
+    "phoneme" : "e",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ἑ",
+        "lower" : "ἑ"
+      },
+      "acute_asper" : {
+        "upper" : "Ἕ",
+        "lower" : "ἕ"
+      },
+      "asper_grave" : {
+        "upper" : "Ἓ",
+        "lower" : "ἓ"
+      },
+      "lenis" : {
+        "upper" : "Ἐ",
+        "lower" : "ἐ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ἔ",
+        "lower" : "ἔ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ἒ",
+        "lower" : "ἒ"
+      },
+      "acute" : {
+        "upper" : "Έ",
+        "lower" : "έ"
+      },
+      "grave" : {
+        "upper" : "Ὲ",
+        "lower" : "ὲ"
+      }
+    },
+    "quantity" : {
+      "long" : false,
+      "short" : true
+    }
+  },
+  "zeta" : {
+    "letters" : ["ζ", "Ζ"],
+    "type" : "double_consonant",
+    "articulation" : {
+    },
+    "plain" : {
+      "upper" : "Ζ",
+      "lower" : "ζ"
+    },
+    "phoneme" : "z"
+  },
+  "eta" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Η",
+      "lower" : "η"
+    },
+    "phoneme" : "e",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ἡ",
+        "lower" : "ἡ"
+      },
+      "acute_asper" : {
+        "upper" : "Ἥ",
+        "lower" : "ἥ"
+      },
+      "asper_grave" : {
+        "upper" : "Ἣ",
+        "lower" : "ἣ"
+      },
+      "asper_circumflex" : {
+        "upper" : "Ἧ",
+        "lower" : "ἧ"
+      },
+      "lenis" : {
+        "upper" : "Ἠ",
+        "lower" : "ἠ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ἤ",
+        "lower" : "ἤ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ἢ",
+        "lower" : "ἢ"
+      },
+      "circumflex_lenis" : {
+        "upper" : "Ἦ",
+        "lower" : "ἦ"
+      },
+      "acute" : {
+        "upper" : "Ή",
+        "lower" : "ή"
+      },
+      "grave" : {
+        "upper" : "Ὴ",
+        "lower" : "ὴ"
+      },
+      "circumflex" : {
+        "lower" : "ῆ"
+      },
+      "asper_iota" : {
+        "upper" : "Ἡι",
+        "lower" : "ᾑ"
+      },
+      "acute_asper_iota" : {
+        "upper" : "Ἥι",
+        "lower" : "ᾕ"
+      },
+      "asper_grave_iota" : {
+        "upper" : "Ἣι",
+        "lower" : "ᾓ"
+      },
+      "asper_circumflex_iota" : {
+        "upper" : "Ἧι",
+        "lower" : "ᾗ"
+      },
+      "iota_lenis" : {
+        "upper" : "Ἠι",
+        "lower" : "ᾐ"
+      },
+      "acute_iota_lenis" : {
+        "upper" : "Ἤι",
+        "lower" : "ᾔ"
+      },
+      "grave_iota_lenis" : {
+        "upper" : "Ἢι",
+        "lower" : "ᾒ"
+      },
+      "circumflex_iota_lenis" : {
+        "upper" : "Ἦι",
+        "lower" : "ᾖ"
+      },
+      "acute_iota" : {
+        "upper" : "Ήι",
+        "lower" : "ῄ"
+      },
+      "grave_iota" : {
+        "upper" : "Ὴι",
+        "lower" : "ῂ"
+      },
+      "circumflex_iota" : {
+        "lower" : "ῇ"
+      },
+      "iota" : {
+        "upper" : "Ηι",
+        "lower" : "ῃ"
+      }
+    },
+    "quantity" : {
+      "long" : true,
+      "short" : false
+    }
+  },
+  "theta" : {
+    "letters" : ["θ", "Θ"],
+    "type" : "consonant",
+    "articulation" : {
+      "aspirata" : true,
+      "dental" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Θ",
+      "lower" : "θ"
+    },
+    "phoneme" : "th"
+  },
+  "iota" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Ι",
+      "lower" : "ι"
+    },
+    "phoneme" : "i",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ἱ",
+        "lower" : "ἱ"
+      },
+      "acute_asper" : {
+        "upper" : "Ἵ",
+        "lower" : "ἵ"
+      },
+      "asper_grave" : {
+        "upper" : "Ἳ",
+        "lower" : "ἳ"
+      },
+      "asper_circumflex" : {
+        "upper" : "Ἷ",
+        "lower" : "ἷ"
+      },
+      "lenis" : {
+        "upper" : "Ἰ",
+        "lower" : "ἰ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ἴ",
+        "lower" : "ἴ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ἲ",
+        "lower" : "ἲ"
+      },
+      "circumflex_lenis" : {
+        "upper" : "Ἶ",
+        "lower" : "ἶ"
+      },
+      "acute" : {
+        "upper" : "Ί",
+        "lower" : "ί"
+      },
+      "grave" : {
+        "upper" : "Ὶ",
+        "lower" : "ὶ"
+      },
+      "circumflex" : {
+        "lower" : "ῖ"
+      }
+    },
+    "quantity" : {
+      "long" : true,
+      "short" : true
+    }
+  },
+  "kappa" : {
+    "letters" : ["κ", "Κ"],
+    "type" : "consonant",
+    "articulation" : {
+      "tenuis" : true,
+      "guttural" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Κ",
+      "lower" : "κ"
+    },
+    "phoneme" : "k"
+  },
+  "lambda" : {
+    "letters" : ["κ", "Κ"],
+    "type" : "consonant",
+    "articulation" : {
+      "tenuis" : true,
+      "guttural" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Κ",
+      "lower" : "κ"
+    },
+    "phoneme" : "k"
+  },
+  "my" : {
+    "letters" : ["μ", "Μ"],
+    "type" : "consonant",
+    "articulation" : {
+      "nasal" : true,
+      "labial" : true,
+      "sonans" : true
+    },
+    "plain" : {
+      "upper" : "Μ",
+      "lower" : "μ"
+    },
+    "phoneme" : "m"
+  },
+  "ny" : {
+    "letters" : ["ν", "Ν"],
+    "type" : "consonant",
+    "articulation" : {
+      "nasal" : true,
+      "dental" : true,
+      "sonans" : true
+    },
+    "plain" : {
+      "upper" : "Ν",
+      "lower" : "ν"
+    },
+    "phoneme" : "n"
+  },
+  "xi" : {
+    "letters" : ["ξ", "Ξ"],
+    "type" : "double_consonant",
+    "articulation" : {
+    },
+    "plain" : {
+      "upper" : "Ξ",
+      "lower" : "ξ"
+    },
+    "phoneme" : "ks"
+  },
+  "omikron" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Ο",
+      "lower" : "ο"
+    },
+    "phoneme" : "o",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ὁ",
+        "lower" : "ὁ"
+      },
+      "acute_asper" : {
+        "upper" : "Ὅ",
+        "lower" : "ὅ"
+      },
+      "asper_grave" : {
+        "upper" : "Ὃ",
+        "lower" : "ὃ"
+      },
+      "lenis" : {
+        "upper" : "Ὀ",
+        "lower" : "ὀ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ὄ",
+        "lower" : "ὄ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ὂ",
+        "lower" : "ὂ"
+      },
+      "acute" : {
+        "upper" : "Ό",
+        "lower" : "ό"
+      },
+      "grave" : {
+        "upper" : "Ὸ",
+        "lower" : "ὸ"
+      }
+    },
+    "quantity" : {
+      "long" : false,
+      "short" : true
+    }
+  },
+  "pi" : {
+    "letters" : ["π", "Π"],
+    "type" : "consonant",
+    "articulation" : {
+      "tenuis" : true,
+      "labial" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Π",
+      "lower" : "π"
+    },
+    "phoneme" : "p"
+  },
+  "rho" : {
+    "letters" : ["ρ", "Ρ", "ῤ", "ῥ"],
+    "type" : "consonant",
+    "articulation" : {
+      "liquida" : true,
+      "sonans" : true
+    },
+    "plain" : {
+      "upper" : "Ρ",
+      "lower" : "ρ"
+    },
+    "diacritics" : {
+      "asper" : "ῥ",
+      "lenis" : "ῤ"
+    },
+    "phoneme" : "r"
+  },
+  "sigma" : {
+    "letters" : ["σ", "Σ", "ς"],
+    "type" : "consonant",
+    "articulation" : {
+      "spirans" : true,
+      "dental" : true,
+      "sonans" : true
+    },
+    "plain" : {
+      "upper" : "Σ",
+      "lower" : "σ"
+    },
+    "phoneme" : "s"
+  },
+  "tau" : {
+    "letters" : ["τ", "Τ"],
+    "type" : "consonant",
+    "articulation" : {
+      "tenuis" : true,
+      "dental" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Τ",
+      "lower" : "τ"
+    },
+    "phoneme" : "t"
+  },
+  "ypsilon" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Υ",
+      "lower" : "υ"
+    },
+    "phoneme" : "y",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ὑ",
+        "lower" : "ὑ"
+      },
+      "acute_asper" : {
+        "upper" : "Ὕ",
+        "lower" : "ὕ"
+      },
+      "asper_grave" : {
+        "upper" : "Ὓ",
+        "lower" : "ὓ"
+      },
+      "asper_circumflex" : {
+        "upper" : "Ὗ",
+        "lower" : "ὗ"
+      },
+      "lenis" : {
+        "lower" : "ὐ"
+      },
+      "acute_lenis" : {
+        "lower" : "ὔ"
+      },
+      "grave_lenis" : {
+        "lower" : "ὒ"
+      },
+      "circumflex_lenis" : {
+        "lower" : "ὖ"
+      },
+      "acute" : {
+        "upper" : "Ύ",
+        "lower" : "ύ"
+      },
+      "grave" : {
+        "upper" : "Ὺ",
+        "lower" : "ὺ"
+      },
+      "circumflex" : {
+        "lower" : "ῦ"
+      }
+    },
+    "quantity" : {
+      "long" : true,
+      "short" : true
+    }
+  },
+  "phi" : {
+    "letters" : ["φ", "Φ"],
+    "type" : "consonant",
+    "articulation" : {
+      "aspirata" : true,
+      "labial" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Φ",
+      "lower" : "φ"
+    },
+    "phoneme" : "ph"
+  },
+  "chi" : {
+    "letters" : ["χ", "Χ"],
+    "type" : "consonant",
+    "articulation" : {
+      "aspirata" : true,
+      "guttural" : true,
+      "muta" : true
+    },
+    "plain" : {
+      "upper" : "Χ",
+      "lower" : "χ"
+    },
+    "phoneme" : "kh"
+  },
+  "psi" : {
+    "letters" : ["ψ", "Ψ"],
+    "type" : "double_consonant",
+    "articulation" : {
+    },
+    "plain" : {
+      "upper" : "Ψ",
+      "lower" : "ψ"
+    },
+    "phoneme" : "psi"
+  },
+  "omega" : {
+    "letters" : [],
+    "type" : "vowel",
+    "plain" : {
+      "upper" : "Ω",
+      "lower" : "ω"
+    },
+    "phoneme" : "o",
+    "diacritics" : {
+      "asper" : {
+        "upper" : "Ὡ",
+        "lower" : "ὡ"
+      },
+      "acute_asper" : {
+        "upper" : "Ὥ",
+        "lower" : "ὥ"
+      },
+      "asper_grave" : {
+        "upper" : "Ὣ",
+        "lower" : "ὣ"
+      },
+      "asper_circumflex" : {
+        "upper" : "Ὧ",
+        "lower" : "ὧ"
+      },
+      "lenis" : {
+        "upper" : "Ὠ",
+        "lower" : "ὠ"
+      },
+      "acute_lenis" : {
+        "upper" : "Ὤ",
+        "lower" : "ὤ"
+      },
+      "grave_lenis" : {
+        "upper" : "Ὢ",
+        "lower" : "ὢ"
+      },
+      "circumflex_lenis" : {
+        "upper" : "Ὦ",
+        "lower" : "ὦ"
+      },
+      "acute" : {
+        "upper" : "Ώ",
+        "lower" : "ώ"
+      },
+      "grave" : {
+        "upper" : "Ὼ",
+        "lower" : "ὼ"
+      },
+      "circumflex" : {
+        "lower" : "ῶ"
+      },
+      "asper_iota" : {
+        "upper" : "Ὡι",
+        "lower" : "ᾡ"
+      },
+      "acute_asper_iota" : {
+        "upper" : "Ὥι",
+        "lower" : "ᾥ"
+      },
+      "asper_grave_iota" : {
+        "upper" : "Ὣι",
+        "lower" : "ᾣ"
+      },
+      "asper_circumflex_iota" : {
+        "upper" : "Ὧι",
+        "lower" : "ᾧ"
+      },
+      "iota_lenis" : {
+        "upper" : "Ὠι",
+        "lower" : "ᾠ"
+      },
+      "acute_iota_lenis" : {
+        "upper" : "Ὤι",
+        "lower" : "ᾤ"
+      },
+      "grave_iota_lenis" : {
+        "upper" : "Ὢι",
+        "lower" : "ᾢ"
+      },
+      "circumflex_iota_lenis" : {
+        "upper" : "Ὦι",
+        "lower" : "ᾦ"
+      },
+      "acute_iota" : {
+        "upper" : "Ώι",
+        "lower" : "ῴ"
+      },
+      "grave_iota" : {
+        "upper" : "Ὼι",
+        "lower" : "ῲ"
+      },
+      "circumflex_iota" : {
+        "lower" : "ῷ"
+      },
+      "iota" : {
+        "upper" : "Ωι",
+        "lower" : "ῳ"
+      }
+    },
+    "quantity" : {
+      "long" : false,
+      "short" : false
+    }
+  }
+}
