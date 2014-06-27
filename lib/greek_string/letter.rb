@@ -2,11 +2,7 @@ class GreekString
   class Letter
     def initialize(letter_hsh)
       @hash = letter_hsh
-      create_methods(@hash[name])
-    end
-
-    def name
-      @hash.keys[0]
+      create_methods(@hash)
     end
 
     def create_methods(hsh)

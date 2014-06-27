@@ -17,7 +17,7 @@ class GreekString
     @json.each do |letter, obj|
       klass = letter.capitalize
       Object.const_set(klass, Class.new(GreekString::Letter) {})
-      @letters << GreekString::Letter.const_get(klass).new(Hash[letter, obj])
+      @letters << GreekString::Letter.const_get(klass).new(obj)
     end
   end
 
