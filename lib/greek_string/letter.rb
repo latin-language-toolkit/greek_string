@@ -5,6 +5,8 @@ class GreekString
       create_methods(@hash)
     end
 
+    private
+
     def create_methods(hsh, outer_key=nil)
       if hsh.is_a? Hash
         hsh.keys.each do |meth|
