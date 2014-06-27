@@ -2,23 +2,34 @@ require "greek_string/version"
 
 class GreekString
   require 'json'
+  require 'greek_string/letter'
 
   attr_reader :letters
   def initialize
     l = File.open('./data/gr_letters.json', 'r') { |f| f.read }
-    @letters = JSON.parse(l)
+    @json = JSON.parse(l)
+    @letters = []
     @res = []
+    create_letter_objects
+  end
+
+  def create_letter_objects
+    @json.each do |letter, obj|
+      klass = letter.capitalize
+      Object.const_set(klass, Class.new(GreekString::Letter) {})
+      @letters << GreekString::Letter.const_get(klass).new(Hash[letter, obj])
+    end
   end
 
   # returns all greek letters upper and lower case
   def all
-    @letters.flat_map {|letter,obj| obj["letters"]}
+    @json.flat_map {|letter,obj| obj["letters"]}
   end
 
   # possible values for args: vowel, consonants, double_consonants,
   # returns upper and lower case
   def find(type)
-    res = @letters.flat_map do |name, obj|
+    res = @json.flat_map do |name, obj|
       if obj["type"] == type
         obj["letters"]
       end
@@ -27,11 +38,11 @@ class GreekString
   end
 
   def find_lower_case
-    find_key(@letters, "lower")
+    find_key(@json, "lower")
   end
 
   def find_upper_case
-    find_key(@letters, "upper")
+    find_key(@json, "upper")
   end
 
   private
