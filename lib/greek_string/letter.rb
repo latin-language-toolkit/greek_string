@@ -25,5 +25,22 @@ class GreekString
         meth
       end
     end
+
+    def method_missing(meth)
+      name = meth.to_s
+      if name.match(/_/)
+        names_array = name.split('_').sort
+        names_array.each do |n|
+          if n.match(/upper|lower/) && (names_array.last != n)
+            names_array.delete(n)
+            names_array.push(n)
+          end
+        end
+        new_meth = names_array.join("_")
+        self.send(new_meth)
+      else
+        super
+      end
+    end
   end
 end
