@@ -1,7 +1,7 @@
 {
   "alpha" : {
     "letters" : ["Α", "α", "Ἁ", "ἁ", "Ἅ", "ἅ", "Ἃ", "ἃ", "Ἇ", "ἇ", "Ἀ", "ἀ", "Ἄ", "ἄ", "Ἂ", "ἂ", "Ἆ", "ἆ", "Ά", "ά", "Ὰ", "ὰ", "ᾶ", "Ἁι", "ᾁ", "Ἅι", "ᾅ", "Ἃι", "ᾃ", "Ἇι", "ᾇ", "Ἀι", "ᾀ", "Ἄι", "ᾄ", "Ἂι", "ᾂ", "Ἆι", "ᾆ", "Άι", "ᾴ", "Ὰι", "ᾲ", "ᾷ", "Αι", "ᾳ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Α",
       "lower" : "α"
@@ -106,7 +106,7 @@
   },
   "beta" : {
     "letters" : ["β", "Β"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "media" : true,
       "labial" : true,
@@ -120,7 +120,7 @@
   },
   "gamma" : {
     "letters" : ["γ", "Γ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "media" : true,
       "guttural" : true,
@@ -136,7 +136,7 @@
   },
   "delta" : {
     "letters" : ["δ", "Δ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "media" : true,
       "dental" : true,
@@ -150,7 +150,7 @@
   },
   "epsilon" : {
     "letters" : ["Ἑ", "ἑ", "Ἕ", "ἕ", "Ἓ", "ἓ", "Ἐ", "ἐ", "Ἔ", "ἔ", "Ἒ", "ἒ", "Έ", "έ", "Ὲ", "ὲ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Ε",
       "lower" : "ε"
@@ -197,7 +197,7 @@
   },
   "zeta" : {
     "letters" : ["ζ", "Ζ"],
-    "type" : "double_consonant",
+    "double_consonant" : true,
     "articulation" : {
     },
     "plain" : {
@@ -208,7 +208,7 @@
   },
   "eta" : {
     "letters" : ["η","Η", "Ἡ", "ἡ", "Ἥ", "ἥ", "Ἣ", "ἣ", "Ἧ", "ἧ", "Ἠ", "ἠ", "Ἤ", "ἤ", "Ἢ", "ἢ", "Ἦ", "ἦ", "Ή", "ή", "Ὴ", "ὴ", "ῆ", "Ἡι", "ᾑ", "Ἥι", "ᾕ", "Ἣι", "ᾓ", "Ἧι", "ᾗ", "Ἠι", "ᾐ", "Ἤι", "ᾔ", "Ἢι", "ᾒ", "Ἦι", "ᾖ", "Ήι", "ῄ", "Ὴι", "ῂ", "ῇ", "Ηι", "ῃ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Η",
       "lower" : "η"
@@ -313,7 +313,7 @@
   },
   "theta" : {
     "letters" : ["θ", "Θ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "aspirata" : true,
       "dental" : true,
@@ -327,7 +327,7 @@
   },
   "iota" : {
     "letters" : ["Ἱ", "ἱ", "Ἵ", "ἵ", "Ἳ", "ἳ", "Ἷ", "ἷ", "Ἰ", "ἰ", "Ἴ", "ἴ", "Ἲ", "ἲ", "Ἶ", "ἶ", "Ί", "ί", "Ὶ", "ὶ", "ῖ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Ι",
       "lower" : "ι"
@@ -385,7 +385,7 @@
   },
   "kappa" : {
     "letters" : ["κ", "Κ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "tenuis" : true,
       "guttural" : true,
@@ -399,7 +399,7 @@
   },
   "lambda" : {
     "letters" : ["κ", "Κ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "tenuis" : true,
       "guttural" : true,
@@ -413,7 +413,7 @@
   },
   "my" : {
     "letters" : ["μ", "Μ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "nasal" : true,
       "labial" : true,
@@ -427,7 +427,7 @@
   },
   "ny" : {
     "letters" : ["ν", "Ν"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "nasal" : true,
       "dental" : true,
@@ -441,7 +441,7 @@
   },
   "xi" : {
     "letters" : ["ξ", "Ξ"],
-    "type" : "double_consonant",
+    "double_consonant" : true,
     "articulation" : {
     },
     "plain" : {
@@ -452,7 +452,7 @@
   },
   "omikron" : {
     "letters" : ["Ὁ", "ὁ", "Ὅ", "ὅ", "Ὃ", "ὃ", "Ὀ", "ὀ", "Ὄ", "ὄ", "Ὂ", "ὂ", "Ό", "ό", "Ὸ", "ὸ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Ο",
       "lower" : "ο"
@@ -499,7 +499,7 @@
   },
   "pi" : {
     "letters" : ["π", "Π"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "tenuis" : true,
       "labial" : true,
@@ -513,7 +513,7 @@
   },
   "rho" : {
     "letters" : ["ρ", "Ρ", "ῤ", "ῥ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "liquida" : true,
       "sonans" : true
@@ -530,7 +530,7 @@
   },
   "sigma" : {
     "letters" : ["σ", "Σ", "ς"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "spirans" : true,
       "dental" : true,
@@ -544,7 +544,7 @@
   },
   "tau" : {
     "letters" : ["τ", "Τ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "tenuis" : true,
       "dental" : true,
@@ -558,7 +558,7 @@
   },
   "ypsilon" : {
     "letters" : ["Ὑ", "ὑ", "Ὕ", "ὕ", "Ὓ", "ὓ", "Ὗ", "ὗ", "ὐ", "ὔ", "ὒ", "ὖ", "Ύ", "ύ", "Ὺ", "ὺ", "ῦ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Υ",
       "lower" : "υ"
@@ -612,7 +612,7 @@
   },
   "phi" : {
     "letters" : ["φ", "Φ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "aspirata" : true,
       "labial" : true,
@@ -626,7 +626,7 @@
   },
   "chi" : {
     "letters" : ["χ", "Χ"],
-    "type" : "consonant",
+    "consonant" : true,
     "articulation" : {
       "aspirata" : true,
       "guttural" : true,
@@ -640,7 +640,7 @@
   },
   "psi" : {
     "letters" : ["ψ", "Ψ"],
-    "type" : "double_consonant",
+    "double_consonant" : true,
     "articulation" : {
     },
     "plain" : {
@@ -651,7 +651,7 @@
   },
   "omega" : {
     "letters" : ["Ὡ", "ὡ", "Ὥ", "ὥ", "Ὣ", "ὣ", "Ὧ", "ὧ", "Ὠ", "ὠ", "Ὤ", "ὤ", "Ὢ", "ὢ", "Ὦ", "ὦ", "Ώ", "ώ", "Ὼ", "ὼ", "ῶ", "Ὡι", "ᾡ", "Ὥι", "ᾥ", "Ὣι", "ᾣ", "Ὧι", "ᾧ", "Ὠι", "ᾠ", "Ὤι", "ᾤ", "Ὢι", "ᾢ", "Ὦι", "ᾦ", "Ώι", "ῴ", "Ὼι", "ῲ", "ῷ", "Ωι", "ῳ"],
-    "type" : "vowel",
+    "vowel" : true,
     "plain" : {
       "upper" : "Ω",
       "lower" : "ω"
