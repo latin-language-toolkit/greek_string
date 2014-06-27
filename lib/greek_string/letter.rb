@@ -2,27 +2,31 @@ class GreekString
   class Letter
     def initialize(letter_hsh)
       @hash = letter_hsh
-      create_methods(@hash)
+      create_inst_var(@hash[name])
+    end
+
+    def name
+      @hash.keys[0]
     end
 
     private
 
-    def create_methods(hsh, outer_key=nil)
+    def create_inst_var(hsh, outer_key=nil)
       if hsh.is_a? Hash
-        hsh.keys.each do |meth|
-          blk = Proc.new { hsh[meth] }
-          method_name = create_method_name(meth, outer_key)
-          self.class.send(:define_method, method_name, &blk )
-          create_methods(hsh[meth], meth)
+        hsh.keys.each do |var|
+          inst_var_name = create_inst_var_name(var, outer_key)
+          instance_variable_set("@#{inst_var_name}", hsh[var])
+          self.class.class_eval("attr_accessor :#{inst_var_name}")
+          create_inst_var(hsh[var], var)
         end
       end
     end
 
-    def create_method_name(meth, outer_key)
-      if self.class.method_defined?(meth)
-        outer_key + '_' + meth
+    def create_inst_var_name(var, outer_key)
+      if self.instance_variable_defined?("@" + var)
+        outer_key + '_' + var
       else
-        meth
+        var
       end
     end
 
