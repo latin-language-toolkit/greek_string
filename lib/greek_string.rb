@@ -32,9 +32,17 @@ class GreekString
 
   def create_letter_objects
     @json.each do |letter, obj|
-      klass = class_hierarchy.const_set(letter.capitalize, Class.new(class_hierarchy))
+      klass = class_const(letter.capitalize)
       klass.new(Hash[letter, obj])
     end
     require 'pry'; binding.pry
+  end
+
+  def class_const(const)
+    if class_hierarchy.const_defined?(const)
+      class_hierarchy.const_get(const)
+    else
+      class_hierarchy.const_set(const, Class.new(class_hierarchy))
+    end
   end
 end
