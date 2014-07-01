@@ -11,18 +11,30 @@ class GreekString
       @hash.keys[0]
     end
 
+    def to_s(*args)
+      res = []
+      if args.empty?
+        args << :lower
+      end
+      args.each do |type|
+        res << self.send(type.to_sym)
+      end
+      res
+    end
+
     private
 
-    def create_inst_var(hsh, outer_key=nil)
+    def create_inst_var(hsh)
       if hsh.is_a? Hash
         hsh.keys.each do |var|
-          if outer_key =~ /plain|diacritics/
+          if var =~ /plain|diacritics/
             next
           else
-            inst_var_name = create_inst_var_name(var, outer_key)
-            instance_variable_set("@#{inst_var_name}", hsh[var])
-            self.class.class_eval("attr_accessor :#{inst_var_name}")
-            create_inst_var(hsh[var], var)
+            instance_variable_set("@#{var}", hsh[var])
+            self.class.class_eval("attr_reader :#{var}")
+            blk = Proc.new { hsh[var] }
+            self.class.send(:define_method, var,  &blk)
+            create_inst_var(hsh[var])
           end
         end
       end
@@ -32,10 +44,20 @@ class GreekString
       GreekString::Letter.const_get(name.capitalize)
     end
 
+    def class_const(const)
+      if const == "Iota" && self.class.to_s == "GreekString::Letter::Omega"
+        class_hierarchy.const_set(const, klass_body)
+      elsif class_hierarchy.const_defined?(const)
+        class_hierarchy.const_get(const)
+      else
+        class_hierarchy.const_set(const, klass_body)
+      end
+    end
+
     def create_class
       letter_types = { "plain" => @inner_hsh["plain"]}.merge(to_be_merged)
       letter_types.each do |type, hsh|
-      klass = class_hierarchy.const_set(camel_case(type), klass_body)
+      klass = class_const(camel_case(type))
         GreekString.letters << klass.new(hsh, type)
       end
     end
@@ -57,29 +79,8 @@ class GreekString
       end
     end
 
-    def create_inst_var_name(var, outer_key)
-      if self.instance_variable_defined?("@" + var)
-        outer_key + '_' + var
-      else
-        var
-      end
-    end
-
     def method_missing(meth)
-      name = meth.to_s
-      if name.match(/_/)
-        names_array = name.split('_').sort
-        names_array.each do |n|
-          if n.match(/upper|lower/) && (names_array.last != n)
-            names_array.delete(n)
-            names_array.push(n)
-          end
-        end
-        new_meth = names_array.join("_")
-        self.send(new_meth)
-      else
-        super
-      end
+      false
     end
   end
 end
