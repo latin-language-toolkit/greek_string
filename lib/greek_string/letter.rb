@@ -30,8 +30,6 @@ class GreekString
           if var =~ /plain|diacritics/
             next
           else
-            instance_variable_set("@#{var}", hsh[var])
-            self.class.class_eval("attr_reader :#{var}")
             blk = Proc.new { hsh[var] }
             self.class.send(:define_method, var,  &blk)
             create_inst_var(hsh[var])
@@ -74,6 +72,7 @@ class GreekString
       Class.new(class_hierarchy) do
         def initialize(hash, type)
           instance_variable_set("@#{type}", true)
+          self.class.class_eval("attr_reader :#{type}")
           create_inst_var(hash)
         end
       end
