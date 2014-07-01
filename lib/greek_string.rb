@@ -45,4 +45,9 @@ class GreekString
       class_hierarchy.const_set(const, Class.new(class_hierarchy))
     end
   end
+
+  def method_missing(meth, *args)
+    res = letters.flat_map { |l| l.to_s(*args) if l.send(meth) }
+    res.delete_if { |el| !el == true }
+  end
 end
