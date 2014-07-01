@@ -58,7 +58,7 @@ class GreekString
       letter_types = { "plain" => @inner_hsh["plain"]}.merge(to_be_merged)
       letter_types.each do |type, hsh|
       klass = class_const(camel_case(type))
-        GreekString.letters << klass.new(hsh, type)
+        GreekString.selection << klass.new(hsh, type)
       end
     end
 
