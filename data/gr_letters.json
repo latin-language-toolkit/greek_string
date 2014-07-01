@@ -198,6 +198,7 @@
   "zeta" : {
     "letters" : ["ζ", "Ζ"],
     "double_consonant" : true,
+    "consonant" : true,
     "articulation" : {
     },
     "plain" : {
@@ -398,18 +399,17 @@
     "phoneme" : "k"
   },
   "lambda" : {
-    "letters" : ["κ", "Κ"],
+    "letters" : ["λ", "Λ"],
     "consonant" : true,
     "articulation" : {
-      "tenuis" : true,
-      "guttural" : true,
-      "muta" : true
+      "sonans" : true,
+      "liquida" : true
     },
     "plain" : {
-      "upper" : "Κ",
-      "lower" : "κ"
+      "upper" : "Λ",
+      "lower" : "λ"
     },
-    "phoneme" : "k"
+    "phoneme" : "l"
   },
   "my" : {
     "letters" : ["μ", "Μ"],
@@ -442,6 +442,7 @@
   "xi" : {
     "letters" : ["ξ", "Ξ"],
     "double_consonant" : true,
+    "consonant" : true,
     "articulation" : {
     },
     "plain" : {
@@ -641,6 +642,7 @@
   "psi" : {
     "letters" : ["ψ", "Ψ"],
     "double_consonant" : true,
+    "consonant" : true,
     "articulation" : {
     },
     "plain" : {
