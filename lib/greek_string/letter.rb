@@ -90,6 +90,16 @@ class GreekString
           end
           diacritics << @type
         end
+
+        def method_missing(meth, *args)
+          if meth.match(/^only_(.*)/)
+            if $1 == @type
+              send(@type, *args)
+            else
+              false
+            end
+          end
+        end
       end
     end
 
