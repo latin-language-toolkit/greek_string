@@ -91,6 +91,14 @@ class GreekString
           diacritics << @type
         end
 
+        def phoneme
+          if @type.match(/asper/)
+            "h" + super
+          else
+            super
+          end
+        end
+
         def method_missing(meth, *args)
           if meth.match(/^only_(.*)/)
             if $1 == @type
