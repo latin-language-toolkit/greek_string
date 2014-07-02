@@ -71,9 +71,24 @@ class GreekString
     def klass_body
       Class.new(class_hierarchy) do
         def initialize(hash, type)
-          instance_variable_set("@#{type}", true)
-          self.class.class_eval("attr_reader :#{type}")
+          @type = type
+          create_type_inst_var
           create_inst_var(hash)
+        end
+
+        def create_type_inst_var
+          separate_types.each do |dia|
+            instance_variable_set("@#{dia}", true)
+            self.class.class_eval("attr_reader :#{dia}")
+          end
+        end
+
+        def separate_types
+          diacritics = []
+          if @type.match('_')
+            diacritics = @type.split('_')
+          end
+          diacritics << @type
         end
       end
     end
