@@ -12,18 +12,18 @@ class GreekString
     create_letter_objects
   end
 
-  def selection
-    GreekString.selection
+  def all
+    GreekString.all
   end
 
   private
 
   def self.initiate_container
-    @selection = GreekString::Container.new
+    @all = GreekString::Container.new
   end
 
-  def self.selection
-    @selection
+  def self.all
+    @all
   end
 
   def class_hierarchy
@@ -44,10 +44,5 @@ class GreekString
     else
       class_hierarchy.const_set(const, Class.new(class_hierarchy))
     end
-  end
-
-  def method_missing(meth, *args)
-    res = selection.flat_map { |l| l.to_s(*args) if l.send(meth) }
-    res.delete_if { |el| !el == true }
   end
 end

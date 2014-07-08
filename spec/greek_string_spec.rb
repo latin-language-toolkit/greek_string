@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe GreekString do
   let(:gs) { GreekString.new }
-  let(:letter_ary) { gs.selection }
+  let(:letter_ary) { gs.all }
   it 'has a version number' do
     expect(GreekString::VERSION).not_to be nil
   end
