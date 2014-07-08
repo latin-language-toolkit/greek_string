@@ -12,6 +12,7 @@ class GreekString
     end
 
     def to_s(*args)
+      args.flatten!
       res = []
       if args.empty?
         args << :lower
@@ -19,7 +20,11 @@ class GreekString
       args.each do |type|
         res << self.send(type.to_sym)
       end
-      res
+      if res.length == 1
+        res[0]
+      else
+        res
+      end
     end
 
     private

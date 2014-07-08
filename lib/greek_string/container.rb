@@ -13,6 +13,10 @@ class GreekString
       @container
     end
 
+    def to_s(*args)
+      @container.flat_map { |letter| letter.to_s(args) }
+    end
+
     def method_missing(meth, *args)
       @container.map! { |l| l if l.send(meth) }.flatten!
       @container.delete_if { |el| !el == true }
