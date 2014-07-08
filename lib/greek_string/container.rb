@@ -5,17 +5,18 @@ class GreekString
 
     def_delegators :@container, :[], :<<, :each, :map, :flat_map
 
-    def initialize
-      @container = []
+    def initialize(letters=nil)
+      @container = letters || []
     end
 
     def to_a
       @container
     end
 
-    def to_s(type)
-      @container.flat_map(&type)
+    def method_missing(meth, *args)
+      @container.map! { |l| l if l.send(meth) }.flatten!
+      @container.delete_if { |el| !el == true }
+      self.class.new(@container)
     end
-
   end
 end
