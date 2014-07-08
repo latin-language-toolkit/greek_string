@@ -20,11 +20,7 @@ class GreekString
       args.each do |type|
         res << self.send(type.to_sym)
       end
-      if res.length == 1
-        res[0]
-      else
-        res
-      end
+      res.length == 1 ? res[0] : res
     end
 
     private
