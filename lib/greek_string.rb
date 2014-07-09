@@ -16,6 +16,10 @@ class GreekString
     GreekString.all
   end
 
+  def selection
+    GreekString.selection
+  end
+
   private
 
   def self.initiate_container
@@ -24,6 +28,10 @@ class GreekString
 
   def self.all
     @all
+  end
+
+  def self.selection
+    GreekString::Container.new(@all.to_a.clone)
   end
 
   def class_hierarchy
