@@ -17,9 +17,11 @@ class GreekString
       @container.flat_map { |letter| letter.to_s(args) }
     end
 
-    def method_missing(meth, *args)
-      @container.map! { |l| l if l.send(meth) }.flatten!
-      @container.delete_if { |el| !el == true }
+    def select_by_type(*meths)
+      meths.each do |meth|
+        @container.map! { |l| l if l.send(meth) }.flatten!
+        @container.delete_if { |el| !el == true }
+      end
       self.class.new(@container)
     end
   end
