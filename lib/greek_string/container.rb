@@ -17,18 +17,23 @@ class GreekString
       @container.flat_map { |letter| letter.to_s(args) }
     end
 
-    def select_by_name(*names)
-      names.each do |name|
-        @container.map! { |l| l if l.kind_of?(GreekString::Letter.const_get(name.to_s)) }.flatten!
-        @container.delete_if { |el| !el == true }
+    def select_by_letter(*letters)
+      letters.each do |letter|
+        @container.select! { |l| l if l.kind_of?(GreekString::Letter.const_get(letter.to_s)) }
       end
       self.class.new(@container)
     end
 
     def select_by_type(*meths)
       meths.each do |meth|
-        @container.map! { |l| l if l.send(meth) }.flatten!
-        @container.delete_if { |el| !el == true }
+        @container.select! { |l| l if l.send(meth) }
+      end
+      self.class.new(@container)
+    end
+
+    def select_by_string(*strings)
+      strings.each do |string|
+        @container.select! { |l| l if (l.upper == string || l.lower == string) }
       end
       self.class.new(@container)
     end
