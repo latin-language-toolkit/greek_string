@@ -17,25 +17,31 @@ class GreekString
       @container.flat_map { |letter| letter.to_s(args) }
     end
 
-    def select_by_letter(*letters)
-      letters.each do |letter|
-        @container.select! { |l| l if l.kind_of?(GreekString::Letter.const_get(letter.to_s)) }
+    def letter(*letters)
+      letters.each do |let|
+        @container.select! { |l| l if l.kind_of?(GreekString::Letter.const_get(let.to_s)) }
       end
-      self.class.new(@container)
     end
 
-    def select_by_type(*meths)
-      meths.each do |meth|
-        @container.select! { |l| l if l.send(meth) }
+    def type(*types)
+      types.each do |ty|
+        @container.select! { |l| l if l.send(ty) }
       end
-      self.class.new(@container)
     end
 
-    def select_by_string(*strings)
-      strings.each do |string|
-        @container.select! { |l| l if (l.upper == string || l.lower == string) }
+    def string(*strings)
+      strings.each do |str|
+        @container.select! { |l| l if (l.upper == str || l.lower == str) }
       end
-      self.class.new(@container)
+    end
+
+    def method_missing(meth, *args)
+      if meth.match(/^select_by_(.*)/)
+        self.send($1, *args)
+        self.class.new(@container)
+      else
+        super
+      end
     end
   end
 end
