@@ -52,50 +52,47 @@
         "lower" : "ᾶ"
       },
       "asper_iota" : {
-        "upper" : "Ἁι",
+        "upper" : "ᾉ",
         "lower" : "ᾁ"
       },
       "acute_asper_iota" : {
-        "upper" : "Ἅι",
+        "upper" : "ᾍ",
         "lower" : "ᾅ"
       },
       "asper_grave_iota" : {
-        "upper" : "Ἃι",
+        "upper" : "ᾋ",
         "lower" : "ᾃ"
       },
       "asper_circumflex_iota" : {
-        "upper" : "Ἇι",
+        "upper" : "ᾏ",
         "lower" : "ᾇ"
       },
       "iota_lenis" : {
-        "upper" : "Ἀι",
+        "upper" : "ᾈ",
         "lower" : "ᾀ"
       },
       "acute_iota_lenis" : {
-        "upper" : "Ἄι",
+        "upper" : "ᾌ",
         "lower" : "ᾄ"
       },
       "grave_iota_lenis" : {
-        "upper" : "Ἂι",
+        "upper" : "ᾊ",
         "lower" : "ᾂ"
       },
       "circumflex_iota_lenis" : {
-        "upper" : "Ἆι",
+        "upper" : "ᾎ",
         "lower" : "ᾆ"
       },
       "acute_iota" : {
-        "upper" : "Άι",
         "lower" : "ᾴ"
       },
       "grave_iota" : {
-        "upper" : "Ὰι",
         "lower" : "ᾲ"
       },
       "circumflex_iota" : {
         "lower" : "ᾷ"
       },
       "iota" : {
-        "upper" : "Αι",
         "lower" : "ᾳ"
       }
     },
@@ -260,50 +257,47 @@
         "lower" : "ῆ"
       },
       "asper_iota" : {
-        "upper" : "Ἡι",
+        "upper" : "ᾘ",
         "lower" : "ᾑ"
       },
       "acute_asper_iota" : {
-        "upper" : "Ἥι",
+        "upper" : "ᾝ",
         "lower" : "ᾕ"
       },
       "asper_grave_iota" : {
-        "upper" : "Ἣι",
+        "upper" : "ᾛ",
         "lower" : "ᾓ"
       },
       "asper_circumflex_iota" : {
-        "upper" : "Ἧι",
+        "upper" : "ᾟ",
         "lower" : "ᾗ"
       },
       "iota_lenis" : {
-        "upper" : "Ἠι",
+        "upper" : "ᾘ",
         "lower" : "ᾐ"
       },
       "acute_iota_lenis" : {
-        "upper" : "Ἤι",
+        "upper" : "ᾜ",
         "lower" : "ᾔ"
       },
       "grave_iota_lenis" : {
-        "upper" : "Ἢι",
+        "upper" : "ᾚ",
         "lower" : "ᾒ"
       },
       "circumflex_iota_lenis" : {
-        "upper" : "Ἦι",
+        "upper" : "ᾞ",
         "lower" : "ᾖ"
       },
       "acute_iota" : {
-        "upper" : "Ήι",
         "lower" : "ῄ"
       },
       "grave_iota" : {
-        "upper" : "Ὴι",
         "lower" : "ῂ"
       },
       "circumflex_iota" : {
         "lower" : "ῇ"
       },
       "iota" : {
-        "upper" : "Ηι",
         "lower" : "ῃ"
       }
     },
@@ -704,50 +698,47 @@
         "lower" : "ῶ"
       },
       "asper_iota" : {
-        "upper" : "Ὡι",
+        "upper" : "ᾩ",
         "lower" : "ᾡ"
       },
       "acute_asper_iota" : {
-        "upper" : "Ὥι",
+        "upper" : "ᾭ",
         "lower" : "ᾥ"
       },
       "asper_grave_iota" : {
-        "upper" : "Ὣι",
+        "upper" : "ᾫ",
         "lower" : "ᾣ"
       },
       "asper_circumflex_iota" : {
-        "upper" : "Ὧι",
+        "upper" : "ᾯ",
         "lower" : "ᾧ"
       },
       "iota_lenis" : {
-        "upper" : "Ὠι",
+        "upper" : "ᾨ",
         "lower" : "ᾠ"
       },
       "acute_iota_lenis" : {
-        "upper" : "Ὤι",
+        "upper" : "ᾬ",
         "lower" : "ᾤ"
       },
       "grave_iota_lenis" : {
-        "upper" : "Ὢι",
+        "upper" : "ᾪ",
         "lower" : "ᾢ"
       },
       "circumflex_iota_lenis" : {
-        "upper" : "Ὦι",
+        "upper" : "ᾮ",
         "lower" : "ᾦ"
       },
       "acute_iota" : {
-        "upper" : "Ώι",
         "lower" : "ῴ"
       },
       "grave_iota" : {
-        "upper" : "Ὼι",
         "lower" : "ῲ"
       },
       "circumflex_iota" : {
         "lower" : "ῷ"
       },
       "iota" : {
-        "upper" : "Ωι",
         "lower" : "ῳ"
       }
     },
