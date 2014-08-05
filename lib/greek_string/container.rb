@@ -43,5 +43,44 @@ class GreekString
         super
       end
     end
+
+    def get_keys
+      pairs = { asper: "shift-'", grave: "'", lenis: "shift-:", acute: ":", circumflex: "[", iota: "]"}
+      res = {};
+      @container.each do |letter|
+        [:upper, :lower].each do |cas|
+          keys = []
+          types = letter.type.split('_')
+          types.each do |t|
+            pairs.each do |k, v|
+              if t == k.to_s
+                keys << v
+              end
+            end
+          end
+          keys << latin(letter, cas)
+          new_key = keys.join('-')
+          res[letter.to_s(cas)] = new_key
+        end
+      end
+      res#.each_with_object({}) { |hsh, (k,v)| hsh[v] = k if v}
+    end
+
+    def write_to_file
+      x = []
+      get_keys.each { |k,v| x << "\"#{v}\" : \"#{k}\"" }
+      x.uniq!
+      File.open('./lib/greek_string/keys2.rb', 'w+') { |f| x.each {|el| f.write("#{el},\n" ) } }
+    end
+
+    def latin(letter, cas)
+      l = letter.phoneme.gsub(/^h/i, "")
+      if cas == :upper && l
+        l.upcase!
+      elsif cas == :lower
+        l.downcase!
+      end
+      l
+    end
   end
 end

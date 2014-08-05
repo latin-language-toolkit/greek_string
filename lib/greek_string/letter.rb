@@ -71,6 +71,7 @@ class GreekString
 
     def klass_body
       Class.new(class_hierarchy) do
+        attr_reader :type
         def initialize(hash, type)
           @type = type
           create_type_inst_var
