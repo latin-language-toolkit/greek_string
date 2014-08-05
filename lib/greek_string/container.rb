@@ -35,6 +35,13 @@ class GreekString
       end
     end
 
+    def select_by_types(*args)
+      args.each do |arg|
+        select_by_type(arg)
+      end
+      to_s
+    end
+
     def method_missing(meth, *args)
       if meth.match(/^select_by_(.*)/)
         self.send($1, *args)
