@@ -6,7 +6,9 @@ class GreekString
   require 'greek_string/container'
 
   def initialize
-    l = File.open('./data/gr_letters.json', 'r') { |f| f.read }
+    #WATCH OUT: hardcoded path
+    path = File.expand_path('/home/robert/llt/greek_string/data/gr_letters.json')
+    l = File.open("#{path}", 'r') { |f| f.read }
     @json = JSON.parse(l)
     GreekString.initiate_container
     create_letter_objects
@@ -43,7 +45,6 @@ class GreekString
       klass = class_const(letter.capitalize)
       klass.new(Hash[letter, obj])
     end
-    require 'pry'; binding.pry
   end
 
   def class_const(const)
