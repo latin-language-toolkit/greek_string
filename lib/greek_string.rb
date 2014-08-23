@@ -6,8 +6,7 @@ class GreekString
   require 'greek_string/container'
 
   def initialize
-    #WATCH OUT: hardcoded path
-    path = File.expand_path('/home/robert/llt/greek_string/data/gr_letters.json')
+    path = File.expand_path('./data/gr_letters.json')
     l = File.open("#{path}", 'r') { |f| f.read }
     @json = JSON.parse(l)
     GreekString.initiate_container
