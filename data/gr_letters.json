@@ -518,8 +518,12 @@
       "lower" : "ρ"
     },
     "diacritics" : {
-      "asper" : "ῥ",
-      "lenis" : "ῤ"
+      "asper" : {
+        "lower" : "ῥ"
+      },
+      "lenis" : {
+        "lower" : "ῤ"
+      }
     },
     "phoneme" : "r"
   },
