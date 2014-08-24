@@ -44,9 +44,7 @@ class GreekString
     end
 
     def class_const(const)
-      if const == "Iota" && self.class.to_s == "GreekString::Letter::Omega"
-        class_hierarchy.const_set(const, klass_body)
-      elsif class_hierarchy.const_defined?(const)
+      if class_hierarchy.const_defined?(const, false)
         class_hierarchy.const_get(const)
       else
         class_hierarchy.const_set(const, klass_body)
@@ -56,7 +54,7 @@ class GreekString
     def create_class
       letter_types = { "plain" => @inner_hsh["plain"]}.merge(to_be_merged)
       letter_types.each do |type, hsh|
-      klass = class_const(camel_case(type))
+        klass = class_const(camel_case(type))
         GreekString.all << klass.new(hsh, type)
       end
     end
