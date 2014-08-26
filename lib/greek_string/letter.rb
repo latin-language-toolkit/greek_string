@@ -21,6 +21,7 @@ class GreekString
         res << self.send(type.to_sym)
       end
       res.length == 1 ? res[0] : res
+      res.compact
     end
 
     private

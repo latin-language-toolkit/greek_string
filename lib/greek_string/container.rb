@@ -39,7 +39,7 @@ class GreekString
       args.each do |arg|
         select_by_type(arg)
       end
-      to_s
+      self.class.new(@container)
     end
 
     def method_missing(meth, *args)
